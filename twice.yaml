@@ -1,0 +1,13 @@
+apiVersion: v1
+kind: Pod
+metadata:
+  name: twice
+  namespace: jyp
+  labels:
+    member: nine
+spec:
+  containers:
+  - name: twice
+    image: nginx
+    ports:
+    - containerPort: 80
