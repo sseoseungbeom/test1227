@@ -1,0 +1,13 @@
+apiVersion: v1
+kind: Pod
+metadata:
+  name: nmixx
+  namespace: jyp
+  labels:
+    member: six
+spec:
+  containers:
+  - name: nmixx
+    image: nginx
+    ports:
+    - containerPort: 80
