@@ -1,0 +1,13 @@
+apiVersion: v1
+kind: Pod
+metadata:
+  name: wondergirls
+  namespace: jyp
+  labels:
+    member: four
+spec:
+  containers:
+  - name: wondergirls
+    image: nginx
+    ports:
+    - containerPort: 80
