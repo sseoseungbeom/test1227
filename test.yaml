@@ -1,0 +1,14 @@
+apiVersion: v1
+kind: Pod
+metadata:
+  name: itzy2
+  namespace: jyp
+  labels:
+    member: five
+    name: itzy2
+spec:
+  containers:
+  - name: itzy2
+    image: nginx
+    ports:
+    - containerPort: 80
